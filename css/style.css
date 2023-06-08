@@ -28,6 +28,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: var(--sourceHeading);
+    line-height: 1.2; /* Sirve para colocar el tamaño del interlineado */
 }
 
 h1 {
@@ -82,6 +83,10 @@ img {
     background-color: var(--black);
 }
 
+.button--secondary {
+    background-color: var(--primary);
+}
+
 .center-text {
     text-align: center;
 }
@@ -90,6 +95,10 @@ img {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
+}
+
+.courses {
+    list-style: none;
 }
 
 .entry {
@@ -163,4 +172,28 @@ img {
         /* grid-template-columns: 2fr 1fr; */ /* Forma 2 */
         column-gap: 4rem;
     }
+}
+
+.widget-course {
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 2rem;
+}
+
+.widget-course:last-of-type { /* Sirve para seleccionar el último elemento de la clase entrada */
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-course__information {
+    font-weight: normal;
+}
+
+.widget-course__label {
+    font-family: var(--sourceHeading);
+    font-weight: bold;
+}
+
+.widget-course__information,
+.widget-course__label {
+    font-size: 2rem;
 }
