@@ -51,11 +51,17 @@ img {
     max-width: 100%;
 }
 
+.bar {
+    padding-top: 4rem;
+    margin-bottom: 10rem;
+}
+
 @media (min-width: 768px) {
     .bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 15rem;
     }
 }
 
@@ -92,8 +98,9 @@ img {
 }
 
 .container {
-    max-width: 120rem;
-    width: 90%;
+    max-width: 120rem; /* Forma 1 */
+    width: 90%; /* Forma 1 */
+    /* width: min(90%, 120rem); */ /* Forma 2 */
     margin: 0 auto;
 }
 
@@ -109,6 +116,12 @@ img {
 .entry:last-of-type { /* Sirve para seleccionar el último elemento de la clase entrada */
     border: none;
     margin-bottom: 0;
+}
+
+.footer {
+    background-color: var(--black);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }
 
 .header {
