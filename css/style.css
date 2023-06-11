@@ -2,6 +2,7 @@
     --sourceHeading: 'PT Sans', sans-serif;
     --sourceParagraphs: 'Open Sans', sans-serif;
     --black: #000000;
+    --brown-clear: #9b2c00b0;
     --gray: #E1E1E1;
     --primary: #784D3C;
     --white: #FFFFFF;
@@ -53,7 +54,6 @@ img {
 
 .bar {
     padding-top: 4rem;
-    margin-bottom: 10rem;
 }
 
 @media (min-width: 768px) {
@@ -93,6 +93,13 @@ img {
     background-color: var(--primary);
 }
 
+.button--primary:hover,
+.button--secondary:hover {
+    background-color: var(--gray);
+    color: var(--primary);
+    border-radius: 1rem;
+}
+
 .center-text {
     text-align: center;
 }
@@ -122,6 +129,12 @@ img {
     background-color: var(--black);
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .footer__bar {
+        margin-bottom: 1rem;
+    }
 }
 
 .header {
@@ -168,6 +181,11 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--white);
+    transition: .3s;
+}
+
+.navigator__link:hover {
+    color: var(--brown-clear);
 }
 
 .no-margin {
