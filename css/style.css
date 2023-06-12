@@ -52,6 +52,35 @@ img {
     max-width: 100%;
 }
 
+.aboutUs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.aboutUs__image {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .aboutUs {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+    }
+} /* LO DESARROLLÉ YO, FUNCIONA CORRECTAMENTE */
+
+/* @media (min-width: 768px) {
+    .aboutUs {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .aboutUs__image,
+    .aboutUs__text {
+        flex-basis: 50%; Se puede decir que es el width
+    }
+} */
+
 .bar {
     padding-top: 4rem;
 }
