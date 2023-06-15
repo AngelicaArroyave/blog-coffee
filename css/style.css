@@ -140,6 +140,10 @@ img {
     margin: 0 auto;
 }
 
+.container__description {
+    font-family: var(--sourceParagraphs);
+}
+
 .courses {
     list-style: none;
 }
