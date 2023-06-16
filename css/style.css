@@ -104,6 +104,7 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
+    border: none;
 }
 
 @media (min-width: 768px) {
@@ -131,6 +132,13 @@ img {
 
 .center-text {
     text-align: center;
+}
+
+.contact-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -185,6 +193,34 @@ img {
     .footer__bar {
         margin-bottom: 1rem;
     }
+}
+
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 3rem;
+    /* padding-right: 3rem; */ /* También se puede usar el padding en vez del gap */
+}
+
+.field__input {
+    flex: 1; /* Se expande, tomando todo el tamaño restante del div */
+    border: 1px solid var(--gray);
+}
+
+.field__label {
+    flex: 0 0 9rem; /* Lo que hace es dejar fijo el tamaño del label */
+    text-align: right;
+}
+
+.field__textarea {
+    height: 20rem;
+}
+
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
 }
 
 .header {

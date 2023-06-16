@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Blog de Café </title>
+</head>
+
+<body>
+    <div class="header-container"></div>
+
+    <main class="container">
+        <h3 class="center-text"> Contacto </h3>
+
+        <div class="contact-bg"></div>
+
+        <form class="form">
+            <div class="field">
+                <label class="field__label" for="nombre"> Nombre </label>
+                <input class="field__input" type="text" placeholder="Tu nombre" id="nombre">
+            </div>
+            <div class="field">
+                <label class="field__label" for="email"> Email </label>
+                <input class="field__input" type="email" placeholder="Tu correo electrónico" id="email">
+            </div>
+            <div class="field">
+                <label class="field__label" for="message"> Mensaje </label>
+                <textarea class="field__textarea field__input" id="message" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <div class="field">
+                <input class="button button--primary" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    
+    <div class="footer-container"></div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('.header-container').load('./header.html');
+        $('.footer-container').load('./footer.html');
+    });
+</script>
+
+</html>
