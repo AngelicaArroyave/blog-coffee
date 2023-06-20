@@ -279,7 +279,7 @@ img {
 }
 
 .navigator__link:hover {
-    color: var(--brown-clear);
+    border-bottom: 1px solid var(--gray);
 }
 
 .no-margin {
